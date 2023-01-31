@@ -49,14 +49,14 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 {
+/* h1 {
 	font-size: 2rem;
 	text-align: center;
 }
 
 h2 {
 	font-size: 1rem;
-}
+} */
 
 pre {
 	font-size: 16px;
@@ -104,4 +104,90 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0.85;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-top: 0;
+	padding: 0.75rem 0;
+}
+
+div {
+	/* padding: 0 10px; */
+}
+
+table {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 1.3em;
+	border-top: 1px solid #212529;
+	border-bottom: 1px solid #212529;
+}
+
+tr {
+	display: flex;
+	width: 100%;
+}
+
+thead > tr, tr:not(:last-child) {
+	border-bottom: 1px solid #212529;
+}
+tr > td {
+	font-size: 1.1rem;
+}
+thead > tr > td {
+	font-weight: 600;
+	background-color: #212529;
+	color: #eef1f8;
+}
+
+thead > tr {
+	border-bottom: 1px solid #eef1f8;
+}
+
+
+tr:nth-of-type(even) {
+	background: lightgray;
+}
+
+td 	{
+	width: 14%;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+}
+td:first-child {
+	width: 10%;
+}
+
+td:last-child {
+	width: 20%;
+}
+
+td:not(:last-child) {
+	border-right: 1px solid #212529;
+}
+thead > td:not(:last-child) {
+	border-right: 1px solid #eef1f8;
+}
+
+thead > tr > td:not(:last-child) {
+	border-right: 1px solid #eef1f8;
+}
+
+.btn {
+	padding: 5px 15px;
 }
